@@ -1,0 +1,165 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #aaa;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  width: 500px;
+  margin: 100px auto;
+}
+
+.cart-container {
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px rgb(160, 160, 160);
+}
+
+.header {
+
+}
+
+.cart-body {
+  background-image: linear-gradient(#ccc, #f9f9f9);
+}
+
+.cart-item {
+  padding: 5px 20px 0 20px;
+}
+
+.cart-row {
+  display: flex;
+  padding: 15px 0;
+  flex-direction: row;
+  border-bottom: #ccc 1px solid;
+}
+
+.cart-row-cell {
+  height: 50px;
+}
+
+.cart-row .desc h5 {
+  margin: 5px 5px;
+}
+
+.cart-row .desc p {
+  margin: 5px;
+  font-size: 0.8em;
+}
+
+.cart-row .pic {
+  flex: 1;
+  position: relative;
+}
+
+.cart-row .quant ul {
+  list-style: none;
+}
+
+.cart-row .quant ul li {
+  display: inline-block;
+  font-size: 1.3em;
+  padding: 0 5px;
+}
+
+.cart-row .quant ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.cart-row .pic span {
+  display: inline-block;
+  background-color: #eee;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-image: url(monitor.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cart-row .pic a {
+  position: absolute;
+  top: -4;
+  left: -2;
+  display: inline-block;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  font-size: 1em;
+  text-align: center;
+  color: #000;
+  box-shadow: 2px 2px 2px rgb(160, 160, 160);
+  text-decoration: none;
+  border-radius: 10px;
+}
+.cart-row .desc {
+  flex: 3;
+}
+
+.cart-row .quant {
+  flex: 2;
+}
+.cart-row .amount {
+  flex: 2;
+}
+
+.cart-row .amount p {
+  margin: 21px 25px 0;
+}
+
+.cart-container header {
+  color: #fff;
+  background-color: #006CB5;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.cart-container header h3 {
+  margin: 0;
+  padding: 20px;
+}
+.cart-container footer {
+  padding: 30px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.cart-container footer button {
+  color: #fff;
+  border: none;
+  font-size: 1em;
+  padding: 10px 15px;
+  background-color: #006cb5;
+}
+
+.cart-container footer .totals {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin-top: 7px;
+}
+
+.totals:last-of-type {
+  margin-bottom: 45px;
+}
+
+.cart-container footer .totals p {
+  margin: 0;
+}
+
+.cart-container footer .total-label {
+  flex: 1;
+  text-align: left;
+}
+.cart-container footer .total-amount {
+  flex: 1;
+  text-align: right;
+}
